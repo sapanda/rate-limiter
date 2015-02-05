@@ -1,0 +1,17 @@
+{
+  "DataSourceA": {
+    "UserHourly": 5,
+    "UserDaily": 50
+  },
+  "DataSourceB": {
+    "UserHourly": 150,
+    "GlobalHourly": 100000
+  },
+  "DataSourceC": {
+    "UserHourly": 100,
+    "GlobalDaily": 500000
+  },
+  "DataSourceD": {
+    "UserDaily": 2000
+  }
+}
