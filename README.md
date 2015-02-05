@@ -9,12 +9,14 @@ Before running the application, you will need to run a Redis server:
 [Download and Build Redis](http://redis.io/download)  
 `> src/redis-server`
 
-Option 1: Run as a server
+In each of the following, the server/module takes as input a data source and user, and returns info stating whether a call to that data source for the given user would hit any of the rate limits specified in limits.json.
+
+### Option 1: Run as a server
 
 `> npm start`  
 `> curl 'http://localhost:8080/?datasource=DataSourceA&user=UserA'`  
 
-Option 2: Run as a module
+### Option 2: Run as a module
 
 `var checkRateLimits = require('./app/limitCheck');`  
 `checkRateLimits({'datasource': 'DataSourceA', 'user': 'UserA'}, callback);`  
